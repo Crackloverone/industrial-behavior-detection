@@ -1,0 +1,38 @@
+[project]
+name = "industrial-vision-behavior-system"
+version = "1.1.0"
+description = "工业视觉行为检测系统"
+requires-python = ">=3.11,<3.13"
+dependencies = [
+    "aiofiles>=23.0",
+    "behavior-detection-lite",
+    "fastapi>=0.104",
+    "httpx>=0.25",
+    "numpy>=1.24",
+    "onnxruntime>=1.16",
+    "opencv-python>=4.8",
+    "passlib>=1.7.4",
+    "pillow>=10.0",
+    "pydantic>=2.0",
+    "pymysql>=1.1",
+    "python-jose>=3.3",
+    "python-multipart>=0.0.6",
+    "pyyaml>=6.0",
+    "redis>=5.0",
+    "sqlalchemy>=2.0",
+    "ultralytics>=8.4,<9",
+    "uvicorn[standard]>=0.24",
+    "websockets>=12.0",
+]
+
+[dependency-groups]
+dev = [
+    "pytest>=8,<10",
+]
+
+[tool.uv.sources]
+behavior-detection-lite = { path = "behavior-detection-lite", editable = true }
+
+[tool.pytest.ini_options]
+testpaths = ["tests", "behavior-detection-lite/tests"]
+pythonpath = [".", "behavior-detection-lite/src"]

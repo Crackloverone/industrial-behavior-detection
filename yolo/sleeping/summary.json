@@ -1,0 +1,26 @@
+{
+  "dataset": "sleeping",
+  "classes": [
+    "sleep"
+  ],
+  "val_groups": [
+    "5449",
+    "5462"
+  ],
+  "splits": {
+    "train": {
+      "images": 70,
+      "empty_labels": 28,
+      "boxes": {
+        "sleep": 61
+      }
+    },
+    "val": {
+      "images": 17,
+      "empty_labels": 6,
+      "boxes": {
+        "sleep": 11
+      }
+    }
+  }
+}

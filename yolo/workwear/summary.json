@@ -1,0 +1,28 @@
+{
+  "dataset": "workwear",
+  "classes": [
+    "workwear",
+    "no_workwear"
+  ],
+  "val_groups": [
+    "5460"
+  ],
+  "splits": {
+    "train": {
+      "images": 79,
+      "empty_labels": 0,
+      "boxes": {
+        "workwear": 97,
+        "no_workwear": 235
+      }
+    },
+    "val": {
+      "images": 26,
+      "empty_labels": 1,
+      "boxes": {
+        "workwear": 21,
+        "no_workwear": 44
+      }
+    }
+  }
+}

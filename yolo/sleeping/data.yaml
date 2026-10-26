@@ -1,0 +1,6 @@
+path: /Users/lorenzo/Documents/工业视觉识别系统开发与设计大作业/datasets/yolo/sleeping
+train: images/train
+val: images/val
+nc: 1
+names:
+  0: sleep

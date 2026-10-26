@@ -1,0 +1,7 @@
+path: /Users/lorenzo/Documents/工业视觉识别系统开发与设计大作业/datasets/yolo/workwear
+train: images/train
+val: images/val
+nc: 2
+names:
+  0: workwear
+  1: no_workwear
